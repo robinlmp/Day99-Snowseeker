@@ -1,10 +1,3 @@
-//
-//  ResortDetailsView.swift
-//  ResortDetailsView
-//
-//  Created by Robin Phillips on 30/08/2021.
-//
-
 import SwiftUI
 
 struct ResortDetailsView: View {
