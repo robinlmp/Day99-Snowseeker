@@ -1,10 +1,3 @@
-//
-//  Bundle-Decodable.swift
-//  Moonshot
-//
-//  Created by Robin Phillips on 17/06/2021.
-//
-
 import Foundation
 
 extension Bundle {
