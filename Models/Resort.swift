@@ -1,12 +1,4 @@
-//
-//  Resort.swift
-//  Resort
-//
-//  Created by Robin Phillips on 31/08/2021.
-//
-
 import Foundation
-
 
 struct Resort: Codable, Identifiable, Hashable {
     let id: String
