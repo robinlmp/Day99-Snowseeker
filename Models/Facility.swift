@@ -1,10 +1,3 @@
-//
-//  Facility.swift
-//  Facility
-//
-//  Created by Robin Phillips on 30/08/2021.
-//
-
 import SwiftUI
 
 struct Facility: Identifiable {
