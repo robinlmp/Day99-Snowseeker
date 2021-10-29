@@ -1,10 +1,3 @@
-//
-//  ResortView.swift
-//  ResortView
-//
-//  Created by Robin Phillips on 30/08/2021.
-//
-
 import SwiftUI
 
 struct ResortView: View {
@@ -14,10 +7,7 @@ struct ResortView: View {
     
     @State private var selectedFacility: Facility?
     
-    let resort: Resort
-    
-    
-    
+    let resort: Resort 
     
     var body: some View {
         ScrollView {
