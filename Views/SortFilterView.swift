@@ -9,14 +9,6 @@ import SwiftUI
 
 enum SortBy: String, CaseIterable {
     case country = "By country", name = "By resort name", none = "None"
-    
-//    static var sortByString: String {
-//        switch SortBy {
-//        case .country: return "By country"
-//        case .name: return "By resort name"
-//        case .none: return "No filter"
-//        }
-//    }
 }
 
 enum FilterBy: String, CaseIterable {
@@ -44,9 +36,6 @@ struct SortFilterView: View {
     @Binding var isFilteredAndSorted: Bool
     
     @State private var filter = FilterBy.none
-//    @State private var filterByPrice = FilterByPrice.all
-//    @State private var filterBySize = FilterBySize.all
-//    @State private var filterByCountry = FilterByCountry.all
     
     @Binding var filterByPrice: FilterByPrice
     @Binding var filterBySize: FilterBySize
@@ -68,10 +57,7 @@ struct SortFilterView: View {
                     }
                     .pickerStyle(SegmentedPickerStyle())
                 }
-                
-                
-                
-                
+
                 Section(header: Text("Price filter")) {
                     Picker(selection: $filterByPrice) {
                         ForEach(FilterByPrice.allCases, id: \.self) { filter in
@@ -103,24 +89,17 @@ struct SortFilterView: View {
                         Text("Select country")
                     }
                     .pickerStyle(SegmentedPickerStyle())
-                    
                 }
-                
-                
-                
             }
-            
-            
             .navigationTitle(Text("Sort and filter"))
             .navigationBarItems(trailing:
-                                    Button(action: {
+                                Button(action: {
                 filteredAndSorted = filterAndSort()
                 detailIsShowing = false
             }) {
                 Text("Done")
             })
         }
-        
     }
     
     func filterAndSort() -> [Resort] {
@@ -178,9 +157,3 @@ struct SortFilterView: View {
     }
     
 }
-
-//struct SortFilterView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        SortFilterView()
-//    }
-//}
