@@ -1,10 +1,3 @@
-//
-//  SortFilterView.swift
-//  SortFilterView
-//
-//  Created by Robin Phillips on 31/08/2021.
-//
-
 import SwiftUI
 
 enum SortBy: String, CaseIterable {
