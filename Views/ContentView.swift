@@ -1,13 +1,4 @@
-//
-//  ContentView.swift
-//  Day97-Snowseeker
-//
-//  Created by Robin Phillips on 30/08/2021.
-//
-
 import SwiftUI
-
-
 
 struct WelcomeView: View {
     var body: some View {
@@ -113,8 +104,3 @@ extension View {
         }
     }
 }
-
-
-//extension String: Identifiable {
-//    public var id: String { self }
-//}
