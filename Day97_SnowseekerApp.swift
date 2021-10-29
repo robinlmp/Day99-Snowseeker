@@ -1,9 +1,3 @@
-//
-//  Day97_SnowseekerApp.swift
-//  Day97-Snowseeker
-//
-//  Created by Robin Phillips on 30/08/2021.
-//
 
 import SwiftUI
 
